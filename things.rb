@@ -72,5 +72,42 @@
     total: 520,
     item: 'Oscar Best Picture Nominees',
     description: nil
+  },
+  {
+    verb: 'had',
+    total: 365,
+    item: 'productive #IQAforums discussions',
+    description: nil
+  },
+  {
+    verb: 'played',
+    total: 127,
+    item: 'champions in LoL',
+    description: nil
+  },
+  {
+    verb: 'burned',
+    total: 3000,
+    item: 'gallons of guzzleline',
+    description: 'on the fury road'
+  },
+  {
+    verb: 'played',
+    total: 256,
+    item: 'regular season NFL matches',
+    description: nil
+  },
+  {
+    verb: 'divded',
+    total: 365,
+    item: 'days per year',
+    description: 'by the number of days to ref haus'
+  },
+  {
+    verb: 'enojyed',
+    total: 900,
+    item: 'of the total world cheeses',
+    description: nil
   }
+
 ]
