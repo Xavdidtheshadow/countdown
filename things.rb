@@ -48,5 +48,11 @@
     total: 36,
     item: 'main sections in the rulebook',
     description: nil
+  },
+  {
+    verb: 'seen',
+    total: 10000000,
+    item: 'unique colors seen',
+    description: nil
   }
 ]
