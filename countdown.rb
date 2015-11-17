@@ -1,6 +1,6 @@
 require 'sinatra'
-require 'haml'
-require 'sass'
+require 'tilt/haml'
+require 'tilt/sass'
 
 configure do
   require_relative 'things'
@@ -16,7 +16,6 @@ end
 get '/' do
   wc = Date.parse('2016-4-13')
   @days_until = (wc - Date.today).to_f
-  puts settings.things
   @item = fetch_item
   haml :index
 end
