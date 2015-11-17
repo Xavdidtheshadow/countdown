@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %link{rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'}
+    %link{rel: 'stylesheet', href: '/the.css'}
+  %body
+    .container
+      %h1
+        Ref Haus is in
+        = @days_until
+        days
+      %h3
+        %i
+          This is no time at all. 
+      %br
+      %p
+        Like,  
+        %span.danger.bold
+          = (@item[:total] / @days_until).round(2)
+        = @item[:item]
+        = @item[:verb] 
+        = @item[:description] 
+        per day!
