@@ -52,7 +52,7 @@
   {
     verb: 'seen',
     total: 10000000,
-    item: 'unique colors seen',
+    item: 'unique colors',
     description: nil
   }
 ]
