@@ -54,5 +54,23 @@
     total: 10000000,
     item: 'unique colors',
     description: nil
+  },
+  {
+    verb: 'heard',
+    total: 309,
+    item: 'Beatles songs',
+    description: nil
+  },
+  {
+    verb: 'watched',
+    total: 87,
+    item: 'Oscar Best Picture Winners',
+    description: nil
+  },
+  {
+    verb: 'watched',
+    total: 520,
+    item: 'Oscar Best Picture Nominees',
+    description: nil
   }
 ]

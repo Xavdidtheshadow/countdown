@@ -2,6 +2,7 @@
 %html
   %head
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{'http-equiv' => 'refresh', content: "#{3600 * 4}"}
     %title
       Ref Haus Countdown?
     %link{rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'}
@@ -10,12 +11,11 @@
     .container
       %h1
         Ref Haus is in
-        = @days_until
+        = @days_until.to_i
         days
       %h3
         %i
           This is no time at all. 
-      %br
       %p
         Like,  
         %span.danger.bold
