@@ -3,7 +3,7 @@ require 'tilt/haml'
 require 'tilt/sass'
 
 configure do
-  require_relative 'things'
+  require './things'
   set :things, @things
 end
 
@@ -16,6 +16,7 @@ end
 get '/' do
   wc = Date.parse('2016-4-13')
   @days_until = (wc - Date.today).to_f
+  @done = @days_until == 0
   @item = fetch_item
   haml :index
 end

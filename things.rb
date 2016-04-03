@@ -6,7 +6,7 @@
     total: 150,
     item: 'original Pokémon',
     description: nil
-  }, 
+  },
   {
     verb: 'added',
     total: 1329,
@@ -17,6 +17,18 @@
     verb: 'watched',
     total: 208,
     item: 'episodes of "How I Met Your Mother"',
+    description: nil
+  },
+  {
+    verb: 'watched',
+    total: 803,
+    item: 'episodes of "SNL"',
+    description: nil
+  },
+  {
+    verb: 'played',
+    total: 3870,
+    item: 'PS2 games',
     description: nil
   },
   {

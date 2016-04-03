@@ -11,16 +11,24 @@
     .container
       %h1
         Ref Haus is in
-        = @days_until.to_i
-        days
-      %h3
-        %i
-          This is no time at all. 
-      %p
-        Like,  
-        %span.danger.bold
-          = (@item[:total] / @days_until).round(2)
-        = @item[:item]
-        = @item[:verb] 
-        = @item[:description] 
-        per day!
+        - if @done
+          no time at all
+        - else
+          = @days_until.to_i
+          days
+      - unless @done
+        %h3
+          %i
+            This is no time at all.
+        %p
+          Like,
+          %span.danger.bold
+            = (@item[:total] / @days_until).round(2)
+          = @item[:item]
+          = @item[:verb]
+          = @item[:description]
+          per day!
+      - else 
+        %h3
+          %i
+            Get hype.
