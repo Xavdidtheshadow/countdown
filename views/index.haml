@@ -15,7 +15,11 @@
           no time at all
         - else
           = @days_until.to_i
-          days
+          - if @days_until.to_i == 1
+            day
+          - else
+            days
+            
       - unless @done
         %h3
           %i
