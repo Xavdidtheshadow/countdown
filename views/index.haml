@@ -19,7 +19,7 @@
             day
           - else
             days
-            
+
       - unless @done
         %h3
           %i
@@ -32,7 +32,13 @@
           = @item[:verb]
           = @item[:description]
           per day!
-      - else 
+          - if @item[:source]
+            %sup
+              %a{href: @item[:source], target: '_blank'}<
+                source
+                - if @item[:source].include?('.pdf')
+                  [PDF]
+      - else
         %h3
           %i
             Get hype.

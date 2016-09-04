@@ -5,6 +5,10 @@ require 'tilt/sass'
 configure do
   require './things'
   set :things, @things
+  #firstnightbestnight is April 5
+  set :wc, Date.new(2017, 4, 5)
+  # this doesn't get used anywhere, but this is the last time I updated any of the values
+  set :updated, Date.new(2016, 9, 4)
 end
 
 helpers do
@@ -14,11 +18,14 @@ helpers do
 end
 
 get '/' do
-  wc = Date.parse('2016-4-13')
-  @days_until = (wc - Date.today).to_f
-  @done = @days_until == 0
+  @days_until = (settings.wc - Date.today).to_f
+  @done = @days_until < 0
   @item = fetch_item
   haml :index
+end
+
+get '/last_updated' do
+  settings.updated.to_s
 end
 
 get '/item' do
