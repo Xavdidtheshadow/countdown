@@ -6,7 +6,7 @@ configure do
   require './things'
   set :things, @things
   #firstnightbestnight is April 5
-  set :wc, Date.new(2017, 4, 5)
+  set :wc, Date.new(2018, 4, 11)
   # this doesn't get used anywhere, but this is the last time I updated any of the values
   set :updated, Date.new(2016, 9, 4)
 end
